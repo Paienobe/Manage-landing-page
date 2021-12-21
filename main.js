@@ -86,10 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
             i = 0
         }
         review.innerHTML = reviewContent[i]
-        dots[0].style.backgroundColor = "transparent"
-        dots[1].style.backgroundColor = "transparent"
-        dots[2].style.backgroundColor = "transparent"
-        dots[3].style.backgroundColor = "transparent"
+        dots.forEach((dot) => {
+            dot.style.backgroundColor = "transparent"
+        })
+        
         dots[i].style.backgroundColor = "hsl(12, 88%, 59%)"
     }, 5000)
 
