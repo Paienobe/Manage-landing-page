@@ -1,4 +1,4 @@
-html {
+* {
     scroll-behavior: smooth;
     transition: all ease-in-out .25s;
 }
